@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 Mi Lista de Tareas</h1>
+
+    <input 
+      type="text" 
+      id="inputTarea" 
+      placeholder="Escribe una tarea..."
+      onkeydown="if(event.key==='Enter'){agregarTarea()}"
+    >
+
+    <button onclick="agregarTarea()">Agregar</button>
+
+    <ul id="listaTareas"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div class="filtros">
+  <button onclick="filtrar('todas')">Todas</button>
+  <button onclick="filtrar('pendientes')">Pendientes</button>
+  <button onclick="filtrar('completadas')">Completadas</button>
+</div>
