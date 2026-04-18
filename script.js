@@ -70,9 +70,6 @@ function crearTarea(texto, completada) {
       li.style.display = li.classList.contains("completada") ? "none" : "flex";
     } else if (tipo === "completadas") {
       li.style.display = li.classList.contains("completada") ? "flex" : "none";
-    }
-  });
-}if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
-    .then(() => console.log("Service Worker registrado"));
+    }if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
 }
